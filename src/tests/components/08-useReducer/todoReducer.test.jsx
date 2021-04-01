@@ -45,19 +45,21 @@ describe('Pruebas en todoReducer', () => {
 
     test('should delete todo', () => {
 
-        const oldTodo = {
-            id: 2,
-            todo: 'Tenir una bona economia',
-            done: false,
-        }
+        
 
         const deleteTodoAction = {
             type: 'delete',
-            payload: oldTodo,
+            payload: 2,
         }
         
         const state = todoReducer(initialTodos, deleteTodoAction);
-        expect(state.length).toBe(2);
+        console.log(state);
+        expect(state.length).toBe(1);
+        expect(state).toEqual([{
+            id: 1,
+            todo: 'Apendre a estar sol',
+            done: false,
+        }]);
     })
 
     test('should toggle done/undone a todo', () => {
@@ -68,8 +70,8 @@ describe('Pruebas en todoReducer', () => {
         }
         
         const state = todoReducer(initialTodos, toggleTodoAction);
-        console.log(state);
         expect(state[1].done).toBe(true);
+        expect(state[0].done).toBe(true);
         
     })
 })
