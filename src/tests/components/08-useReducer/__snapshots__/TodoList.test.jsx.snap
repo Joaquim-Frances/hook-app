@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing todo list component should display correctly 1`] = `
+<ul
+  className="list-group list-group-flush"
+>
+  <TodoListItem
+    handleDelete={[MockFunction]}
+    handleToggle={[MockFunction]}
+    i={0}
+    key="0"
+    todo={
+      Object {
+        "done": false,
+        "id": 1,
+        "todo": "Apendre a estar sol",
+      }
+    }
+  />
+  <TodoListItem
+    handleDelete={[MockFunction]}
+    handleToggle={[MockFunction]}
+    i={1}
+    key="1"
+    todo={
+      Object {
+        "done": false,
+        "id": 2,
+        "todo": "Tenir una bona economia",
+      }
+    }
+  />
+  <TodoListItem
+    handleDelete={[MockFunction]}
+    handleToggle={[MockFunction]}
+    i={2}
+    key="2"
+    todo={
+      Object {
+        "done": false,
+        "id": 3,
+        "todo": "Practicar QiGong",
+      }
+    }
+  />
+  <TodoListItem
+    handleDelete={[MockFunction]}
+    handleToggle={[MockFunction]}
+    i={3}
+    key="3"
+    todo={
+      Object {
+        "done": false,
+        "id": 4,
+        "todo": "Testejar la meditació amb els ulls oberts",
+      }
+    }
+  />
+</ul>
+`;
