@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing in TodoListItem component should display correclty 1`] = `
+<li
+  className="list-group-item"
+  key="4"
+>
+  <p
+    className="complete"
+    onClick={[Function]}
+  >
+    1
+    . 
+    Comprar usb
+  </p>
+  <button
+    className="btn btn-danger"
+    onClick={[Function]}
+  >
+     Borrar 
+  </button>
+</li>
+`;
